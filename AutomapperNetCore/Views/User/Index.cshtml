@@ -1,0 +1,23 @@
+﻿@using AutomapperNetCore.ViewModels
+
+
+@model UserViewModel
+
+<h1>User Details</h1>
+
+<div>
+    <h4>User</h4>
+    <hr />
+    <dl class="row">
+        <dt class="col-sm-2">
+            @Html.DisplayFor(model => model.FirstName)
+        </dt>       
+        <dt class="col-sm-2">
+            @Html.DisplayFor(model => model.LastName)
+        </dt>
+        <dt class="col-sm-2">
+            @Html.DisplayFor(model => model.Email)
+        </dt>
+
+    </dl>
+</div>
